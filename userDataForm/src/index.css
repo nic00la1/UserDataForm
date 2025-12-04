@@ -1,3 +1,4 @@
+/* Formularze  */
 input[type=text] {
     width: 100%;
     padding: 12px;
@@ -5,6 +6,7 @@ input[type=text] {
     box-sizing: border-box;
 }
 
+/* Przyciski */
 button {
     background-color: rgb(1, 178, 249);
     padding: 15px;
@@ -20,4 +22,53 @@ button:hover {
     justify-content: center;
     align-items: center;
     height: 200px;
+}
+
+/* Pasek nawigacyjny */
+.progress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    margin: 0 10px;
+    position: relative;
+}
+
+.circle.active {
+    background-color: dodgerblue;
+}
+
+.circle.completed {
+    background-color: steelblue;
+}
+
+.circle::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -50px;
+    width: 50px;
+    height: 4px;
+    background-color: lightgray;
+    transform: translateY(-50%);
+}
+
+.circle:last-child::after {
+    display: none;
+}
+
+.circle.completed::after {
+    background-color: steelblue;
 }
