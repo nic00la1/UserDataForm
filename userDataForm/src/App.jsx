@@ -1,18 +1,13 @@
 import './App.css'
+import Form1 from './components/Form1'
+import Form2 from './components/Form2'
 
 function App() {
   return (
     <>
       <div>
-        <form>
-          <label>Imię: </label>
-          <input type='text'/>
-          <label>Nazwisko: </label>
-          <input type='text'/>
-          <label>E-Mail: </label>
-          <input type='text'/>
-          <button>Przejdź do kolejnego formularza</button>
-        </form>
+       <Form1/>
+       <Form2/>
       </div>
     </>
   )

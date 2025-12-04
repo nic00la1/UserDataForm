@@ -1,0 +1,16 @@
+input[type=text] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: rgb(1, 178, 249);
+    padding: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(1, 253, 255);
+}
