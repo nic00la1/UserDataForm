@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import '../styles/Summary.css';
 
 const Summary = ({ formData, setStep}) => {
   return (
-    <div>
-      <h1>Podsumowanie</h1>
+    <div className='container'>
+      <h className="title">Podsumowanie</h>
       <p><strong>Imię: </strong>{formData.imie}</p>
       <p><strong>Nazwisko: </strong>{formData.nazwisko}</p>
       <p><strong>E-mail: </strong>{formData.email}</p>
