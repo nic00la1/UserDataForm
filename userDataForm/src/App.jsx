@@ -10,7 +10,7 @@ function App() {
   const [step, setStep] = useState(1);
 
   // Obiekt stanu z trzema polami    
-  const [formData, setformData] = useState({
+  const [formData, setFormData] = useState({
       imie: "",
       nazwisko: "",
       email: "",
@@ -22,10 +22,10 @@ function App() {
     <>
       <div>
         {step === 1 && (
-          <Form1 formData={formData} setformData={setformData} setStep={setStep}/>
+          <Form1 formData={formData} setFormData={setFormData} setStep={setStep}/>
         )}
         {step === 2 && (
-          <Form2 formData={formData} setformData={setformData} setStep={setStep}/>
+          <Form2 formData={formData} setFormData={setFormData} setStep={setStep}/>
         )}
         {step === 3 && <Summary formData={formData} setStep={setStep}/>}
       </div>
