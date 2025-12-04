@@ -11,6 +11,7 @@ button {
     background-color: rgb(1, 178, 249);
     padding: 15px;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 button:hover {
@@ -28,8 +29,15 @@ button:hover {
 .progress {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    margin: 20px 0;
+    position: relative;
 }
 
 .circle {
@@ -42,7 +50,6 @@ button:hover {
     align-items: center;
     font-weight: bold;
     color: white;
-    margin: 0 10px;
     position: relative;
 }
 
@@ -54,21 +61,28 @@ button:hover {
     background-color: steelblue;
 }
 
-.circle::after {
+.step::after {
     content: "";
     position: absolute;
-    top: 50%;
-    right: -50px;
-    width: 50px;
+    top: 20px;
+    left: 50%;
+    width: 75px;
     height: 4px;
     background-color: lightgray;
     transform: translateY(-50%);
+    z-index: -1;
 }
 
-.circle:last-child::after {
+.step:last-child::after {
     display: none;
 }
 
-.circle.completed::after {
+.step.completed::after {
     background-color: steelblue;
+}
+
+.label {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #1723cc;
 }

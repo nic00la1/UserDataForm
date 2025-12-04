@@ -22,9 +22,18 @@ function App() {
     <>
       <div>
         <div className='progress'>
-          <div className={`circle ${step >= 1 ? "active" : ""}`}>1</div>
-          <div className={`circle ${step >= 2 ? "active" : ""}`}>2</div>
-          <div className={`circle ${step >= 3 ? "active" : ""}`}>3</div>
+          <div className='step'>
+            <div className={`circle ${step === 1 ? "active" : step > 1 ? "completed" : ""}`}>1</div>
+            <div className='label'>Dane osobowe</div>
+          </div>
+          <div className='step'>
+            <div className={`circle ${step === 2 ? "active" : step > 2 ? "completed" : ""}`}>2</div>
+            <div className='label'>Adres</div>
+          </div>
+          <div className='step'>
+            <div className={`circle ${step === 3 ? "active" : step > 3 ? "completed" : ""}`}>3</div>
+            <div className='label'>Podsumowanie</div>
+          </div>
         </div>
         {step === 1 && (
           <Form1 formData={formData} setFormData={setFormData} setStep={setStep}/>
