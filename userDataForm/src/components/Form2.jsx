@@ -8,7 +8,7 @@ const Form2 = () => {
         <input type='text'/>
         <label>Ulica: </label>
         <input type='text'/>
-        <button>Przejdź do kolejnego formularza</button>
+        <button>POWRÓT</button>
       </form>
     </div>
   )

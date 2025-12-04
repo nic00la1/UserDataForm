@@ -1,6 +1,7 @@
 import React from 'react'
 
 const Form1 = () => {
+
   return (
     <div>
        <form>
@@ -10,7 +11,7 @@ const Form1 = () => {
           <input type='text'/>
           <label>E-Mail: </label>
           <input type='text'/>
-          <button>Przejdź do kolejnego formularza</button>
+          <button>Dalej</button>
         </form>
     </div>
   )
